@@ -1,0 +1,75 @@
+[
+  {
+    "payerName": "MAA Yojana",
+    "identificationHeaders": ["TID", "Patient Name", "Hospital Code", "Pkg Code"],
+    "columnMapping": {
+      "TID": "claimId",
+      "Patient Name": "patientName", 
+      "Hospital Name": "hospitalName",
+      "Date of Admission": "serviceDate",
+      "Date of Discharge": "dischargeDate",
+      "Status": "status",
+      "Pkg Rate": "claimedAmount",
+      "Approved Amount": "approvedAmount",
+      "Paid Amount": "paidAmount",
+      "Pkg Speciality Name": "specialty",
+      "Package Name": "packageName",
+      "District Name": "districtName",
+      "Gender": "gender",
+      "Query Raised": "queryRaised",
+      "Days to Payment": "daysToPayment",
+      "Payment Date": "paymentDate",
+      "Modified Date": "modifiedDate"
+    }
+  },
+  {
+    "payerName": "RGHS TMS",
+    "identificationHeaders": ["TID", "PATIENTNAME", "HOSPITALNAME", "DATEOFADMISSION", "HOSPITALCLAIMAMOUNT"],
+    "columnMapping": {
+      "TID": "claimId",
+      "PATIENTNAME": "patientName",
+      "HOSPITALNAME": "hospitalName",
+      "DATEOFADMISSION": "serviceDate",
+      "DATEOFDISCHARGE": "dischargeDate",
+      "STATUS": "status",
+      "HOSPITALCLAIMAMOUNT": "claimedAmount",
+      "CUAPPROVEDAMOUNT": "approvedAmount",
+      "DEPARTMENT": "specialty",
+      "SPECIALITY": "packageName",
+      "GENDER": "gender"
+    }
+  },
+  {
+    "payerName": "RGHS",
+    "identificationHeaders": ["TREATMENTPACKAGEUID", "PATIENTNAME", "HOSPITALNAME", "DATEOFADMISSION", "HOSPITALCLAIMAMOUNT"],
+    "columnMapping": {
+      "TREATMENTPACKAGEUID": "claimId",
+      "PATIENTNAME": "patientName",
+      "HOSPITALNAME": "hospitalName",
+      "DATEOFADMISSION": "serviceDate",
+      "DATEOFDISCHARGE": "dischargeDate",
+      "STATUS": "status",
+      "HOSPITALCLAIMAMOUNT": "claimedAmount",
+      "CUAPPROVEDAMOUNT": "approvedAmount",
+      "Actual Paid Amount": "paidAmount",
+      "DEPARTMENT": "specialty",
+      "SPECIALITY": "packageName",
+      "GENDER": "gender"
+    }
+  },
+  {
+    "payerName": "RGHS Payment Tracker",
+    "identificationHeaders": ["S No.", "Transaction Id", "Hospital Claim Amount", "Paid Amount(Rs.)"],
+    "columnMapping": {
+      "Transaction Id": "claimId",
+      "Patient Name": "patientName",
+      "Hospital Name": "hospitalName",
+      "Date of Admission": "serviceDate",
+      "Date of Discharge": "dischargeDate",
+      "Final Status": "status",
+      "Hospital Claim Amount": "claimedAmount",
+      "CU Claim Amount": "approvedAmount",
+      "Paid Amount(Rs.)": "paidAmount"
+    }
+  }
+]
